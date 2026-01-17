@@ -1,0 +1,46 @@
+ QWidget {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        font-family: 'Segoe UI';
+    }
+    QGroupBox {
+        border: 2px solid #3a3a3a;
+        border-radius: 8px;
+        margin-top: 2ex;
+        font-weight: bold;
+    }
+    QGroupBox::title {
+        subcontrol-origin: margin;
+        subcontrol-position: top center;
+        padding: 0 10px;
+        background-color: #1e1e1e;
+    }
+    QPushButton {
+        background-color: #333;
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 8px;
+        font-weight: bold;
+        min-width: 120px;
+    }
+    QPushButton:hover {
+        background-color: #444;
+        border-color: #0078d7;
+    }
+    QPushButton#nav_active {
+        border-bottom: 3px solid #0078d7;
+        color: #0078d7;
+        border-radius: 0;
+        background-color: #252525;
+    }
+    QLCDNumber {
+        border: 1px solid #444;
+        background-color: #000;
+        color: #00ff00;
+    }
+    QListWidget {
+        border: 1px solid #3a3a3a;
+        background-color: #151515;
+        font-family: 'Consolas';
+        font-size: 10pt;
+    }
