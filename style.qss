@@ -1,46 +1,95 @@
- QWidget {
-        background-color: #1e1e1e;
-        color: #dcdcdc;
-        font-family: 'Segoe UI';
-    }
-    QGroupBox {
-        border: 2px solid #3a3a3a;
-        border-radius: 8px;
-        margin-top: 2ex;
-        font-weight: bold;
-    }
-    QGroupBox::title {
-        subcontrol-origin: margin;
-        subcontrol-position: top center;
-        padding: 0 10px;
-        background-color: #1e1e1e;
-    }
-    QPushButton {
-        background-color: #333;
-        border: 1px solid #555;
-        border-radius: 5px;
-        padding: 8px;
-        font-weight: bold;
-        min-width: 120px;
-    }
-    QPushButton:hover {
-        background-color: #444;
-        border-color: #0078d7;
-    }
-    QPushButton#nav_active {
-        border-bottom: 3px solid #0078d7;
-        color: #0078d7;
-        border-radius: 0;
-        background-color: #252525;
-    }
-    QLCDNumber {
-        border: 1px solid #444;
-        background-color: #000;
-        color: #00ff00;
-    }
-    QListWidget {
-        border: 1px solid #3a3a3a;
-        background-color: #151515;
-        font-family: 'Consolas';
-        font-size: 10pt;
-    }
+/* Główne ustawienia okna */
+QWidget {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    font-family: 'Arial';
+}
+
+/* Etykiety tekstowe */
+QLabel {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Grupy kontrolek */
+QGroupBox {
+    border: 2px solid #3a3a3a;
+    border-radius: 8px;
+    margin-top: 2ex;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    background-color: #1e1e1e;
+    font-size: 12pt;
+    color: #0078d7;
+}
+
+/* Przyciski */
+QPushButton {
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    min-width: 120px;
+    min-height: 50px;
+    font-size: 14pt;
+}
+
+QPushButton:hover {
+    background-color: #444;
+    border-color: #0078d7;
+}
+
+/* Przycisk aktywnej nawigacji */
+QPushButton#nav_active {
+    border-bottom: 3px solid #0078d7;
+    color: #0078d7;
+    border-radius: 0;
+    background-color: #252525;
+}
+
+/* Suwaki */
+QSlider::groove:horizontal {
+    border: 1px solid #555;
+    height: 10px;
+    background: #333;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal {
+    background: #0078d7;
+    border: 1px solid #005a9e;
+    width: 30px;
+    height: 30px;
+    margin: -12px 0;
+    border-radius: 15px;
+}
+
+/* Checkboxy */
+QCheckBox {
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Wyświetlacze LCD */
+QLCDNumber {
+    border: 1px solid #444;
+    background-color: #000;
+    color: #00ff00;
+}
+
+/* Lista logów */
+QListWidget {
+    border: 1px solid #3a3a3a;
+    background-color: #151515;
+    font-family: 'Consolas';
+    font-size: 10pt;
+}
